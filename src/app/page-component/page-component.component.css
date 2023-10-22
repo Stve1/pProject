@@ -1,0 +1,75 @@
+#mainPage{
+  padding: 10vh 2vw;
+}
+
+#header{
+  align-content: center;
+  text-align: center;
+}
+
+#titleV{
+  color: blueviolet;
+  font-size: 5vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+#videos{
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+
+}
+
+.playButton{
+  background-color: purple;
+  color: white;
+}
+
+.nVideos{
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#rVideos{
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.reproduccion{
+  display: flex;
+  flex-direction: row;
+  margin: 1vh 0;
+}
+
+.previsualizar{
+  background-color: aqua;
+  height: 100px;
+}
+
+.pr{
+  background-color: blue;
+  height: 100px;
+}
+
+.rVideoBody{
+  background-color: blue;
+  height: 100px;
+}
+
+.bateria{
+  display: flex;
+  flex-direction: row;
+  margin: 1vh 0;
+  padding: 1vh;
+}
+
+#footer{
+  background-color: gray;
+  margin-top: 2vh;
+}

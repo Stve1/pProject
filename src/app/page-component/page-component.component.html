@@ -1,3 +1,123 @@
-<div id="mainPage">
-  <p>Hola</p>
+<div id="mainPage" class="row">
+  <nav id="header" class="col-md-12 navbar fixed-top" style="background-color: red;" >
+    <h1 id="titleV">Velez Reality</h1>
+  </nav>
+  <div id="videos" class="col-md-5  card">
+    <div class="card playButton">
+      <div class="row">
+          <p>Play</p>
+          <p>Return</p>
+      </div>
+    </div>
+
+    <div>
+      <div *ngFor="let pelicula of peliculas">
+        <a href="">
+          <div class="card">
+            <div class="card-body row">
+              <p class="nVideos">{{pelicula}}</p>
+              <p class="tVideos">Duración: {{duracion}}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+  </div>
+    <a href="">
+      <div class="card">
+        <div class="card-body">
+          <button class="btn btn-danger">Boton danger</button>
+        </div>
+      </div>
+    </a>
+    <a href="">
+      <div class="card">
+        <div class="card-body">
+          <button class="btn btn-danger">Boton danger</button>
+        </div>
+      </div>
+    </a>
+    <a href="">
+      <div class="card">
+        <div class="card-body">
+          <button class="btn btn-danger">Boton danger</button>
+        </div>
+      </div>
+    </a>
+    <a href="">
+      <div class="card">
+        <div class="card-body">
+          <button class="btn btn-danger">Boton danger</button>
+        </div>
+      </div>
+    </a>
+    <a href="">
+      <div class="card">
+        <div class="card-body">
+          <button class="btn btn-danger">Boton danger</button>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-md-1"></div>
+
+  <div id="rVideos" class="col-md-6  card">
+
+    <h1> Reproducción de videos </h1>
+    <div class="col-12 reproduccion">
+      <div class="previsualizar col-6">
+        <video id="mivideo" src="tecla.ogv" controls height="100vh">
+          Tu navegador no soporta el elemento <code>video</code>.
+        </video>
+      </div>
+      <div class="pr col-6">
+      </div>
+    </div>
+
+    <div *ngFor="let pelicula of peliculas">
+      <a href="">
+        <div class="card col-12 reproduccion">
+          <div class="col-3 pr">
+          </div>
+          <div class="col-9">
+              <p class="nVideos">{{pelicula}}</p>
+              <p class="tVideos">Duración: {{duracion}}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <button class="btn btn-danger col-5" style="margin: 0 auto">Botón Stop</button>
+
+  </div>
+
+  <div id="footer" class="card">
+    <h1>Batería dispositivos</h1>
+    <div class="card bateria">
+      <p class="nVideos">Nombre dispositivo: </p>
+      <p class="tVideos">Batería: {{duracion}}</p>
+      <p class="tVideos">Video: {{duracion}}</p>
+    </div>
+
+    <div class="card bateria">
+      <p class="nVideos">Nombre dispositivo: </p>
+      <p class="tVideos">Batería: {{duracion}}</p>
+      <p class="tVideos">Video: {{duracion}}</p>
+    </div>
+
+    <div class="card bateria">
+      <p class="nVideos">Nombre dispositivo: </p>
+      <p class="tVideos">Batería: {{duracion}}</p>
+      <p class="tVideos">Video: {{duracion}}</p>
+    </div>
+
+    <div class="card bateria">
+      <p class="nVideos">Nombre dispositivo: </p>
+      <p class="tVideos">Batería: {{duracion}}</p>
+      <p class="tVideos">Video: {{duracion}}</p>
+    </div>
+
+  </div>
 </div>
+
+
